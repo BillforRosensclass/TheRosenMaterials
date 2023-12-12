@@ -1,0 +1,15 @@
+So I had one main problem with JUCE in the beginning - it was misrouting the lookup for the modules folder to a different folder, so nothing was working. An easy thing to fix, but it gave me a ton of trouble until I worked it out and most
+of my work failed to build until I worked it out (I initially thought I made a working gain plugin, which I reported in my progress report two weeks age, but this issue impeded a bunch of the build and I couldn't salvage much of it). Speaking
+of, once I fixed this, I just used what I learned about making sliders to make the slider for the hi-low pass filter. I followed a bunch of tutorials, especially for the filter, but I learned a lot while I went and if I had to code a JUCE
+plugin in C++ all on my own, I would say that I know enough to get at least a simple one made without a tutorial. What really impeded me from making more plugins was a fatal JUCE error that would shut down all my builds, and the best
+description I can give of it is that JUCE loses access to its library files for each plugin and fails to recognize certain internal symbols. I say 'loses' because each initial build worked but subsequent builds of my same projects would fail
+because of this library bug, and I say 'internal' because none of the symbols were ones I coded in and were confined to files that came packaged in to JUCE's default audio plugin downloader. This cost me about two or three different plugins,
+including the gain and a distortion one, but I persisted and got the hi-low pass to work on subsequent builds (I had to remake it five separate times, though). Not sure what I did differently, but I can tell you that I kept the default name
+of the plugin the fifth time around and just changed the identifier in my code, so maybe that made it easier to path out the partner files (if you're wondering why it says 'proyecto' instead of project, I think my brother has some keybinds
+or something that he used on my laptop for Spanish when he was taking a class in school, so that could be it). My personal OneDrive also deleted my documents folder midway through my project, so that screwed up my earlier builds, too.
+Altogether, I'm glad I persisted because I made something that I'm really proud of and I definitely will keep making more plugins to changeup my sound now that I know how. BTW, I know the video doesn't convey it perfectly, but the low-pass
+around 150hz sounds super good. It just rolls off that high-end perfectly and gives me a really nice compressed sound for my bass. I don't know what a 'professional' filter or compressor sounds like, but I could genuinely see someone paying
+20-30 dollars for a pedal that does what my plugin does, and that's super awesome.
+
+
+              - Bill :)
