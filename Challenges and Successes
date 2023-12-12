@@ -11,5 +11,8 @@ Altogether, I'm glad I persisted because I made something that I'm really proud 
 around 150hz sounds super good. It just rolls off that high-end perfectly and gives me a really nice compressed sound for my bass. I don't know what a 'professional' filter or compressor sounds like, but I could genuinely see someone paying
 20-30 dollars for a pedal that does what my plugin does, and that's super awesome.
 
+For grading, I made everything in the LowpassHighpassFilter.cpp and .h files, lines 13-37 and 52-66 of the editor.cpp file, lines 30-41 of the editor.h file, lines 14-32, 103, 147-153, and 164 of the processor.cpp file, and lines 58-62 of the
+processor.h file (also, anywhere the value tree state is called or the LowpassHighpassFilter files are referenced, that's also me).
+
 
               - Bill :)
